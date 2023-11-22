@@ -1,16 +1,25 @@
-public class Main {
-    public static void main(String[] args) {
-        Player pla1 = new Player();
-        pla1.name = "Kylian Mbappe" ;
-        pla1.age = 24 ;
-        pla1.post = "ST" ;
-        pla1.rank = 1 ;
-        pla1.club = "Paris Saint-Germain" ;
-        pla1.nationality = "French" ;
-        pla1.ovr = 91 ;
-        pla1.pass() ;
-        pla1.shoot() ;
-        pla1.jump() ;
-        pla1.info() ;
+public class Player {
+    String name;
+    int age ;
+    String  post ;
+    int rank ;
+    String club ;
+    String  nationality ;
+    int ovr ;
+
+    void pass(){
+        System.out.println(name + " Passing...") ;
+    }
+
+    void shoot(){
+        System.out.println(name + " Shooting...") ;
+    }
+
+    void jump(){
+        System.out.println(name + " Jumping...") ;
+    }
+
+    void info(){
+        System.out.println(name +", aged " + age + ", plays as a " + post + ", currently with " + club + ". The " + nationality + " player boasts an impressive overall " + ovr +" rating, and his ranking is " + rank + ".") ;
     }
 }
