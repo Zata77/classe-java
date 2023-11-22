@@ -1,12 +1,10 @@
-public class Main {
-    public static void main (String[] args) {
-        Employer emp1 = new Employer() ;
-        emp1.number = 1 ;
-        emp1.name = "zata" ;
-        emp1.sales = 2000 ;
-        emp1.bonushours = 100 ;
-        emp1.basesalary = 10000 ;
+public class Employer {
+        int number ;
+        String name ;
+        int sales ;
+        int bonushrs ;
+        int basesalary ;
 
-        emp1.info();
-    }
-}
+        void info(){
+            System.out.println("The employee number is " + number + ". Name is " + name + ". Base salary is " + basesalary + ". Sales are " + sales + ". Bonus hours is " + bonushrs) ;
+        }
